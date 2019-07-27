@@ -65,6 +65,7 @@ class MyAutoScan:
                 f.write('{}{}'.format(comment, nl))
             f.write(nl)
             for car in self.cars.values():
-                f.write(','.join([car[CAR], car[DESCRIPTION], *car[MODULES], nl]))
+                f.write('{}{}'.format(
+                    ','.join([car[CAR], car[DESCRIPTION], *car[MODULES]]), nl))
                 
             
