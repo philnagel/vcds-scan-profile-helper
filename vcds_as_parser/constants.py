@@ -1,1 +1,5 @@
 COMMENTS = 'comments'
+CAR = 'car'
+CARS = 'cars'
+DESCRIPTION = 'description'
+MODULES = 'modules'
