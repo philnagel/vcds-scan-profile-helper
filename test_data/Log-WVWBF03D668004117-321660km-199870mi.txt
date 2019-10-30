@@ -1,0 +1,692 @@
+Sunday,30,June,2019,20:07:50:52947
+VCDS -- Windows Based VAG/VAS Emulator Running on Windows 7 x64
+VCDS Version: 19.6.1.0 (x64)
+Data version: 20190529 DS308.0
+www.Ross-Tech.com
+
+
+VIN: WVWBF03D668004117   License Plate: 
+Mileage: 321660km-199870mi   Repair Order: 
+
+
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+
+Chassis Type: 3D (3D - VW Phaeton (2002 > 2006))
+Scan: 01 02 03 05 06 07 08 09 11 13 15 16 17 18 19 23 27 28 29 2E
+          34 36 37 38 39 46 47 55 56 57 65 66 68 69 71 75 76 77
+ 
+VIN: WVWBF03D668004117   Mileage: 321660km-199870miles
+-------------------------------------------------------------------------------
+Address 01: Engine        Labels: 4D0-907-560-BGH.lbl
+   Part No SW: 4D0 907 560 DG    HW:             
+   Component: 4.2L V8/5V      G   0020  
+   Revision: 00000000    Serial number: VWZ3Z0E7416677
+   Coding: 0007873
+   Shop #: WSC 01065 000 00000
+   VCID: 6ED926947A59D63F7B-5120
+
+1 Fault Found:
+16840 - EVAP System 
+            P0456 - 002 - Very Small Leak Detected - Intermittent
+             Freeze Frame:
+                    Fault Status: 00100010
+                    Fault Priority: 0
+                    Fault Frequency: 1
+                    Reset counter: 255
+                    Mileage: 312499 km
+                    Time Indication: 0
+
+             Freeze Frame:
+                    RPM: 2004 /min
+                    Load: 26.7 %
+                    Speed: 99.0 km/h
+                    Temperature: 76.0°C
+                    Temperature: 15.0°C
+                    Absolute Pres.: 0.0 mbar
+                    Voltage: 13.462 V
+
+Readiness: 0000 0000
+
+-------------------------------------------------------------------------------
+Address 02: Auto Trans        Labels: 09L-927-760.lbl
+   Part No SW: 09L 927 760 L    HW: GS1 911 4
+   Component: AG6 09L 4,2L5V USA  2205  
+   Revision: 00000001    Serial number:        4109611
+   Coding: 0000002
+   Shop #: WSC 00000 000 00000
+   VCID: 4085A82C104D104FD9-5120
+
+No fault code found.
+
+-------------------------------------------------------------------------------
+Address 03: ABS Brakes        Labels: 3D0-614-517.lbl
+   Part No: 3D0 614 517 AK
+   Component: ESP 5.7 allrad  H33 0047  
+   Coding: 0008376
+   Shop #: WSC 01065 000 00000
+   VCID: 6BDF2F80494B23175C-5120
+
+1 Fault Found:
+01826 - Sensor for Steering Angle (G85); Supply Voltage Terminal 30 
+            000 - - - Intermittent
+
+-------------------------------------------------------------------------------
+Address 05: Acc/Start Auth.        Labels: 3D0-909-13x-05.lbl
+   Part No SW: 3D0 909 137 C    HW: 5WK 484 97
+   Component:    Kessy            6700  
+   Revision: 67005715    Serial number: VWZ3Z0E7416677
+   Coding: 0137452
+   Shop #: WSC 01065 000 00000
+   VCID: 275713B09523C777F8-5120
+
+   Subsystem 1 - Part No: XXXXXXXXXXX 
+   Component: ELV                 XXXX
+
+4 Faults Found:
+00668 - Supply Voltage Terminal 30 
+            009 - Open or Short to Ground - Intermittent
+00087 - Terminal 30 for Starting Relevant Consumers 
+            009 - Open or Short to Ground - Intermittent
+00956 - Key 2 
+            002 - Lower Limit Exceeded
+01299 - Diagnostic Interface for Data Bus (J533) 
+            005 - No or Incorrect Basic Setting / Adaptation - Intermittent
+
+-------------------------------------------------------------------------------
+Address 06: Seat Mem. Pass        Labels: 3D0-959-759.lbl
+   Part No: 3D0 959 759 CA
+   Component: Sitzmemory D1 BF    1720  
+   Coding: 0000003
+   Shop #: WSC 01065 000 00000
+   VCID: 77F703F0050397F7A8-5120
+
+1 Fault Found:
+00668 - Supply Voltage Terminal 30 
+            002 - Lower Limit Exceeded - Intermittent
+
+-------------------------------------------------------------------------------
+Address 07: Control Head        Labels: 3D0-035-00x-07.lbl
+   Part No: 3D0 035 008 Q
+   Component:    ZAB COCKPIT      0223  
+   Coding: 0500205
+   Shop #: WSC 01065 000 00000
+   VCID: 2855108C983DC80FF1-5120
+
+1 Fault Found:
+00856 - Radio Antenna 
+            007 - Short to Ground - Intermittent
+
+-------------------------------------------------------------------------------
+Address 08: Auto HVAC        Labels: 3D0-907-040.lbl
+   Part No: 3D0 907 040 J
+   Component: Climatronic D1      2031  
+   Coding: 0000002
+   Shop #: WSC 01065 000 00000
+   VCID: 254B19B8EF2FD567CA-513C
+
+2 Faults Found:
+00026 - Motor for Distribution Flap; Right (V205) 
+            014 - Defective - Intermittent
+00716 - Air recirculation Flap Positioning Motor (V113) 
+            014 - Defective - Intermittent
+
+-------------------------------------------------------------------------------
+Address 09: Cent. Elect.        Labels: 3D0-937-049-V1.clb
+   Part No: 3D0 937 049 H
+   Component: STG.Bordnetz        5101  
+   Coding: 0000002
+   Shop #: WSC 53433 000 1048576
+   VCID: 2F67FB90BDD39F3730-5120
+
+2 Faults Found:
+01498 - Bulb for Parking Lamps; Right (M3) 
+            010 - Open or Short to Plus - Intermittent
+00907 - Intervention load Management 
+            000 - - - Intermittent
+
+-------------------------------------------------------------------------------
+Address 15: Airbags        Labels: 3D0-909-601.lbl
+   Part No: 3D0 909 601 H
+   Component: 04 Airbag 8.4E++H01 0554  
+   Revision: BB38727     Serial number: 0006693=      
+   Coding: 0012340
+   Shop #: WSC 01065 000 00000
+   VCID: 2855108C983DC80FF1-5120
+
+   Subsystem 1 - Part No: 3D0 959 339 
+   Component: BF-Gewichtsens. 006 0005
+
+2 Faults Found:
+01316 - ABS Control Module 
+            004 - No Signal/Communication - Intermittent
+             Freeze Frame:
+                    Fault Status: 00100100
+                    Fault Priority: 2
+                    Fault Frequency: 1
+                    Reset counter: 255
+                    Time Indication: 0
+
+01316 - ABS Control Module 
+            008 - Implausible Signal - Intermittent
+             Freeze Frame:
+                    Fault Status: 00101000
+                    Fault Priority: 2
+                    Fault Frequency: 1
+                    Reset counter: 255
+                    Time Indication: 0
+
+
+-------------------------------------------------------------------------------
+Address 16: Steering wheel        Labels: 3D0-953-549.lbl
+   Part No: 3D0 953 549 E
+   Component: Lenksäulenmodul     3401  
+   Coding: 0000232
+   Shop #: WSC 01065 000 00000
+   VCID: 2F67FB90BDD39F3730-5120
+
+No fault code found.
+
+-------------------------------------------------------------------------------
+Address 17: Instruments        Labels: 3D0-920-xxx-17.lbl
+   Part No: 3D0 920 982 C
+   Component: KOMBIINSTRUMENT RB8 0521  
+   Coding: 0007221
+   Shop #: WSC 01065 000 00000
+   VCID: 2855108C983DC80FF1-513C
+
+No fault code found.
+
+-------------------------------------------------------------------------------
+Address 19: CAN Gateway        Labels: 6N0-909-901-19.lbl
+   Part No: 6N0 909 901 
+   Component: Gateway K<>CAN      0101  
+   Coding: 0000006
+   Shop #: WSC 01065 000 00000
+   VCID: 70E538EC606DC0CF69-5120
+
+No fault code found.
+
+-------------------------------------------------------------------------------
+Address 28: HVAC, Rear        Labels: 3D0-919-158.lbl
+   Part No: 3D0 919 158 G
+   Component: Klima-Bedienteil D1 0117  
+   Shop #: WSC 00000 000 00000
+   VCID: 2F67FB90BDD39F3730-5120
+
+No fault code found.
+
+-------------------------------------------------------------------------------
+Address 29: Left Light        Labels: 3D0-909-157.lbl
+   Part No: 3D0 909 157 
+   Component: EVG GDL+AutoLWR(l)  0001  
+   Coding: 0000001
+   Shop #: WSC 01065 000 00000
+   VCID: 66C95EB452A91E7F03-515A
+
+No fault code found.
+
+-------------------------------------------------------------------------------
+Address 34: Level Control        Labels: 3D0-907-553-V2.clb
+   Part No: 3D0 907 553 C
+   Component: LUFTFDR.-CDC- 3C3V0 1122  
+   Coding: 0007722
+   Shop #: WSC 01065 000 00000
+   VCID: 275713B09523C777F8-5120
+
+No fault code found.
+
+-------------------------------------------------------------------------------
+Address 36: Seat Mem. Drvr        Labels: 3D0-959-760.lbl
+   Part No: 3D0 959 760 CA
+   Component: Sitzmemory D1 F     1720  
+   Coding: 0000004
+   Shop #: WSC 01065 000 00000
+   VCID: 6FE73B907D53DF3770-5120
+
+1 Fault Found:
+00668 - Supply Voltage Terminal 30 
+            002 - Lower Limit Exceeded - Intermittent
+
+-------------------------------------------------------------------------------
+Address 37: Navigation        Labels: 3D0-919-887.lbl
+   Part No: 3D0 919 887 FX
+   Component:    NAVIGATION       0168  
+   Coding: 0400000
+   Shop #: WSC 00000 000 00000
+   VCID: 0F275B101D93BF3710-5120
+
+1 Fault Found:
+01042 - Control Module; Not Coded 
+            000 - -
+
+-------------------------------------------------------------------------------
+Address 38: Roof Electronics        Labels: 3D0-907-135.lbl
+   Part No: 3D0 907 135 C
+   Component: Dachmodul           0708  
+   Coding: 0000047
+   Shop #: WSC 01065 000 00000
+   VCID: 234F07A0E11B2B57A4-5120
+
+2 Faults Found:
+00220 - Connection to Sunroof 
+            004 - No Signal/Communication - Intermittent
+00926 - Terminal 30 
+            002 - Lower Limit Exceeded - Intermittent
+
+-------------------------------------------------------------------------------
+Address 39: Right Light        Labels: 3D0-909-158.lbl
+   Part No: 3D0 909 158 
+   Component: EVG GDL+AutoLWR(r)  0001  
+   Coding: 0000001
+   Shop #: WSC 01065 000 00000
+   VCID: 67D753B055A3077738-513C
+
+No fault code found.
+
+-------------------------------------------------------------------------------
+Address 46: Central Conv.        Labels: 3D0-959-933.lbl
+   Part No: 3D0 959 933 F
+   Component: X3 HSG              0102  
+   Coding: 0000040
+   Shop #: WSC 02607 002 1048576
+   VCID: 336FF7E051FBBBD754-4AE6
+
+   Subsystem 1 - Part No: 3D1 959 701 K
+   Component: Tuersteuergeraet FS 5616
+
+   Subsystem 2 - Part No: 3D1 959 702 K
+   Component: Tuersteuergeraet BF 5616
+
+   Subsystem 3 - Part No: 3D0 959 703 J
+   Component: Tuersteuergeraet HL 5616
+
+   Subsystem 4 - Part No: 3D0 959 704 J
+   Component: Tuersteuergeraet HR 5616
+
+   Subsystem 5 - Part No: 3D0 909 610 C
+   Component: 3L HDSG             2330
+
+   Subsystem 6 - Part No: 7L0 907 719 A
+   Component:    Neigungssensor   0020
+
+4 Faults Found:
+01331 - Door Control Module; Driver Side (J386) 
+            002 - Lower Limit Exceeded - Intermittent
+01332 - Door Control Module; Passenger Side (J387) 
+            002 - Lower Limit Exceeded - Intermittent
+01333 - Door Control Module; Rear Left (J388) 
+            002 - Lower Limit Exceeded - Intermittent
+01334 - Door Control Module; Rear Right (J389) 
+            002 - Lower Limit Exceeded - Intermittent
+
+-------------------------------------------------------------------------------
+Address 47: Sound System        Labels: 7Lx-035-4xx-47.lbl
+   Part No: 3D0 035 466 A
+   Component: 12K-AUDIOVERST      0118  
+   Shop #: WSC 00000 000 00000
+   VCID: 204508ACF00D304FB9-5120
+
+3 Faults Found:
+00419 - Left Front DSP Midrange Speaker (R103) 
+            011 - Open Circuit
+00420 - Front Right DSP Midrange Speaker (R104) 
+            011 - Open Circuit
+00421 - Rear Left DSP Midrange Speaker (R105) 
+            011 - Open Circuit
+
+-------------------------------------------------------------------------------
+Address 65: Tire Pressure        Labels: Redir Fail!
+   Part No: 3D0 907 273 G
+   Component: Reifendruckueberw.  0026  
+   Coding: 0410204
+   Shop #: WSC 02408 444 11192
+   VCID: 2A51EA848631FA1FE7-513C
+
+No fault code found.
+
+-------------------------------------------------------------------------------
+Address 66: Seat, Rear        Labels: None
+   Part No: 3D0 959 860 C
+   Component: Sitzmemory D1 H     1726  
+   Coding: 0000001
+   Shop #: WSC 00000 000 00000
+   VCID: 2F67FB90BDD39F3730-5120
+
+1 Fault Found:
+00668 - Supply Voltage Terminal 30 
+            002 - Lower Limit Exceeded - Intermittent
+
+-------------------------------------------------------------------------------
+Address 68: Wiper Electr.        Labels: 3Dx-955-1xx-V1.clb
+   Part No: 3D1 955 119 A
+   Component: Front Wiper         2005  
+   Shop #: WSC 00000 000 00000
+   VCID: 275713B09523C777F8-513C
+
+No fault code found.
+
+-------------------------------------------------------------------------------
+Address 71: Battery Charger        Labels: 3D0-915-181.lbl
+   Part No: 3D0 915 181 D
+   Component: Batteriemanagement  2800  
+   Shop #: WSC 00000 000 00000
+   VCID: 244D04BCE4152C6FDD-5120
+
+No fault code found.
+
+-------------------------------------------------------------------------------
+Address 76: Park Assist        Labels: None
+   Part No: 3D0 919 283 D
+   Component: 03 Einparkhilfe     0907  
+   Shop #: WSC 00000 000 00000
+   VCID: 2B5FEF8089CBE3171C-5120
+
+No fault code found.
+
+End-------------------------(Elapsed Time: 08:18)--------------------------
+Sunday,30,June,2019,20:18:37:52947
+VCDS -- Windows Based VAG/VAS Emulator Running on Windows 7 x64
+VCDS Version: 19.6.1.0 (x64)
+Data version: 20190529 DS308.0
+www.Ross-Tech.com
+
+
+VIN: WVWBF03D668004117   License Plate: 
+Mileage: 321660km-199870mi   Repair Order: 
+
+
+Chassis Type: 3D (3D - VW Phaeton (2002 > 2006))
+Scan: 01 02 03 05 06 07 08 09 11 13 15 16 17 18 19 23 27 28 29 2E
+          34 36 37 38 39 46 47 55 56 57 65 66 68 69 71 75 76 77
+ 
+VIN: WVWBF03D668004117   Mileage: 321660km-199870miles
+-------------------------------------------------------------------------------
+Address 01: Engine        Labels: 4D0-907-560-BGH.lbl
+   Part No SW: 4D0 907 560 DG    HW:             
+   Component: 4.2L V8/5V      G   0020  
+   Revision: 00000000    Serial number: VWZ3Z0E7416677
+   Coding: 0007873
+   Shop #: WSC 01065 000 00000
+   VCID: 6ED926947A59D63F7B-5120
+
+No fault code found.
+Readiness: 0110 1101
+
+-------------------------------------------------------------------------------
+Address 02: Auto Trans        Labels: 09L-927-760.lbl
+   Part No SW: 09L 927 760 L    HW: GS1 911 4
+   Component: AG6 09L 4,2L5V USA  2205  
+   Revision: 00000001    Serial number:        4109611
+   Coding: 0000002
+   Shop #: WSC 00000 000 00000
+   VCID: 4085A82C104D104FD9-5120
+
+No fault code found.
+
+-------------------------------------------------------------------------------
+Address 03: ABS Brakes        Labels: 3D0-614-517.lbl
+   Part No: 3D0 614 517 AK
+   Component: ESP 5.7 allrad  H33 0047  
+   Coding: 0008376
+   Shop #: WSC 01065 000 00000
+   VCID: 6BDF2F80494B23175C-5120
+
+No fault code found.
+
+-------------------------------------------------------------------------------
+Address 05: Acc/Start Auth.        Labels: 3D0-909-13x-05.lbl
+   Part No SW: 3D0 909 137 C    HW: 5WK 484 97
+   Component:    Kessy            6700  
+   Revision: 67005715    Serial number: VWZ3Z0E7416677
+   Coding: 0137452
+   Shop #: WSC 01065 000 00000
+   VCID: 275713B09523C777F8-5120
+
+   Subsystem 1 - Part No: XXXXXXXXXXX 
+   Component: ELV                 XXXX
+
+No fault code found.
+
+-------------------------------------------------------------------------------
+Address 06: Seat Mem. Pass        Labels: 3D0-959-759.lbl
+   Part No: 3D0 959 759 CA
+   Component: Sitzmemory D1 BF    1720  
+   Coding: 0000003
+   Shop #: WSC 01065 000 00000
+   VCID: 77F703F0050397F7A8-5120
+
+No fault code found.
+
+-------------------------------------------------------------------------------
+Address 07: Control Head        Labels: 3D0-035-00x-07.lbl
+   Part No: 3D0 035 008 Q
+   Component:    ZAB COCKPIT      0223  
+   Coding: 0500205
+   Shop #: WSC 01065 000 00000
+   VCID: 2855108C983DC80FF1-5120
+
+No fault code found.
+
+-------------------------------------------------------------------------------
+Address 08: Auto HVAC        Labels: 3D0-907-040.lbl
+   Part No: 3D0 907 040 J
+   Component: Climatronic D1      2031  
+   Coding: 0000002
+   Shop #: WSC 01065 000 00000
+   VCID: 254B19B8EF2FD567CA-5120
+
+No fault code found.
+
+-------------------------------------------------------------------------------
+Address 09: Cent. Elect.        Labels: 3D0-937-049-V1.clb
+   Part No: 3D0 937 049 H
+   Component: STG.Bordnetz        5101  
+   Coding: 0000002
+   Shop #: WSC 53433 000 1048576
+   VCID: 2F67FB90BDD39F3730-5120
+
+No fault code found.
+
+-------------------------------------------------------------------------------
+Address 15: Airbags        Labels: 3D0-909-601.lbl
+   Part No: 3D0 909 601 H
+   Component: 04 Airbag 8.4E++H01 0554  
+   Revision: BB38727     Serial number: 0006693=      
+   Coding: 0012340
+   Shop #: WSC 01065 000 00000
+   VCID: 2855108C983DC80FF1-5120
+
+   Subsystem 1 - Part No: 3D0 959 339 
+   Component: BF-Gewichtsens. 006 0005
+
+No fault code found.
+
+-------------------------------------------------------------------------------
+Address 16: Steering wheel        Labels: 3D0-953-549.lbl
+   Part No: 3D0 953 549 E
+   Component: Lenksäulenmodul     3401  
+   Coding: 0000232
+   Shop #: WSC 01065 000 00000
+   VCID: 2F67FB90BDD39F3730-5120
+
+No fault code found.
+
+-------------------------------------------------------------------------------
+Address 17: Instruments        Labels: 3D0-920-xxx-17.lbl
+   Part No: 3D0 920 982 C
+   Component: KOMBIINSTRUMENT RB8 0521  
+   Coding: 0007221
+   Shop #: WSC 01065 000 00000
+   VCID: 2855108C983DC80FF1-5120
+
+No fault code found.
+
+-------------------------------------------------------------------------------
+Address 19: CAN Gateway        Labels: 6N0-909-901-19.lbl
+   Part No: 6N0 909 901 
+   Component: Gateway K<>CAN      0101  
+   Coding: 0000006
+   Shop #: WSC 01065 000 00000
+   VCID: 70E538EC606DC0CF69-5120
+
+No fault code found.
+
+-------------------------------------------------------------------------------
+Address 28: HVAC, Rear        Labels: 3D0-919-158.lbl
+   Part No: 3D0 919 158 G
+   Component: Klima-Bedienteil D1 0117  
+   Shop #: WSC 00000 000 00000
+   VCID: 2F67FB90BDD39F3730-5120
+
+No fault code found.
+
+-------------------------------------------------------------------------------
+Address 29: Left Light        Labels: 3D0-909-157.lbl
+   Part No: 3D0 909 157 
+   Component: EVG GDL+AutoLWR(l)  0001  
+   Coding: 0000001
+   Shop #: WSC 01065 000 00000
+   VCID: 66C95EB452A91E7F03-515A
+
+No fault code found.
+
+-------------------------------------------------------------------------------
+Address 34: Level Control        Labels: 3D0-907-553-V2.clb
+   Part No: 3D0 907 553 C
+   Component: LUFTFDR.-CDC- 3C3V0 1122  
+   Coding: 0007722
+   Shop #: WSC 01065 000 00000
+   VCID: 275713B09523C777F8-5120
+
+No fault code found.
+
+-------------------------------------------------------------------------------
+Address 36: Seat Mem. Drvr        Labels: 3D0-959-760.lbl
+   Part No: 3D0 959 760 CA
+   Component: Sitzmemory D1 F     1720  
+   Coding: 0000004
+   Shop #: WSC 01065 000 00000
+   VCID: 6FE73B907D53DF3770-5120
+
+No fault code found.
+
+-------------------------------------------------------------------------------
+Address 37: Navigation        Labels: 3D0-919-887.lbl
+   Part No: 3D0 919 887 FX
+   Component:    NAVIGATION       0168  
+   Coding: 0400000
+   Shop #: WSC 00000 000 00000
+   VCID: 0F275B101D93BF3710-5120
+
+1 Fault Found:
+01042 - Control Module; Not Coded 
+            000 - -
+
+-------------------------------------------------------------------------------
+Address 38: Roof Electronics        Labels: 3D0-907-135.lbl
+   Part No: 3D0 907 135 C
+   Component: Dachmodul           0708  
+   Coding: 0000047
+   Shop #: WSC 01065 000 00000
+   VCID: 234F07A0E11B2B57A4-5120
+
+No fault code found.
+
+-------------------------------------------------------------------------------
+Address 39: Right Light        Labels: 3D0-909-158.lbl
+   Part No: 3D0 909 158 
+   Component: EVG GDL+AutoLWR(r)  0001  
+   Coding: 0000001
+   Shop #: WSC 01065 000 00000
+   VCID: 67D753B055A3077738-513C
+
+No fault code found.
+
+-------------------------------------------------------------------------------
+Address 46: Central Conv.        Labels: 3D0-959-933.lbl
+   Part No: 3D0 959 933 F
+   Component: X3 HSG              0102  
+   Coding: 0000040
+   Shop #: WSC 02607 002 1048576
+   VCID: 336FF7E051FBBBD754-4AE6
+
+   Subsystem 1 - Part No: 3D1 959 701 K
+   Component: Tuersteuergeraet FS 5616
+
+   Subsystem 2 - Part No: 3D1 959 702 K
+   Component: Tuersteuergeraet BF 5616
+
+   Subsystem 3 - Part No: 3D0 959 703 J
+   Component: Tuersteuergeraet HL 5616
+
+   Subsystem 4 - Part No: 3D0 959 704 J
+   Component: Tuersteuergeraet HR 5616
+
+   Subsystem 5 - Part No: 3D0 909 610 C
+   Component: 3L HDSG             2330
+
+   Subsystem 6 - Part No: 7L0 907 719 A
+   Component:    Neigungssensor   0020
+
+No fault code found.
+
+-------------------------------------------------------------------------------
+Address 47: Sound System        Labels: 7Lx-035-4xx-47.lbl
+   Part No: 3D0 035 466 A
+   Component: 12K-AUDIOVERST      0118  
+   Shop #: WSC 00000 000 00000
+   VCID: 204508ACF00D304FB9-5120
+
+No fault code found.
+
+-------------------------------------------------------------------------------
+Address 65: Tire Pressure        Labels: Redir Fail!
+   Part No: 3D0 907 273 G
+   Component: Reifendruckueberw.  0026  
+   Coding: 0410204
+   Shop #: WSC 02408 444 11192
+   VCID: 2A51EA848631FA1FE7-5120
+
+No fault code found.
+
+-------------------------------------------------------------------------------
+Address 66: Seat, Rear        Labels: None
+   Part No: 3D0 959 860 C
+   Component: Sitzmemory D1 H     1726  
+   Coding: 0000001
+   Shop #: WSC 00000 000 00000
+   VCID: 2F67FB90BDD39F3730-5120
+
+No fault code found.
+
+-------------------------------------------------------------------------------
+Address 68: Wiper Electr.        Labels: 3Dx-955-1xx-V1.clb
+   Part No: 3D1 955 119 A
+   Component: Front Wiper         2005  
+   Shop #: WSC 00000 000 00000
+   VCID: 275713B09523C777F8-5120
+
+No fault code found.
+
+-------------------------------------------------------------------------------
+Address 71: Battery Charger        Labels: 3D0-915-181.lbl
+   Part No: 3D0 915 181 D
+   Component: Batteriemanagement  2800  
+   Shop #: WSC 00000 000 00000
+   VCID: 244D04BCE4152C6FDD-5120
+
+No fault code found.
+
+-------------------------------------------------------------------------------
+Address 76: Park Assist        Labels: None
+   Part No: 3D0 919 283 D
+   Component: 03 Einparkhilfe     0907  
+   Shop #: WSC 00000 000 00000
+   VCID: 2B5FEF8089CBE3171C-5120
+
+No fault code found.
+
+End-------------------------(Elapsed Time: 09:36)--------------------------

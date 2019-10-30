@@ -1,0 +1,20 @@
+;
+; This file has the same format as the main AutoScan.txt file,
+; but it's intended to contain custom entries for your own car(s)
+; that will be displayed before the standard models in the selection
+; box on the Auto-Scan screen.
+;
+; Chassis Code (max 3 characters),
+; Description  (max 15 characters),
+; Comma-separated list of addresses (max 125 addresses)
+; Maximum 250 chassis types (total of both files)
+;
+; Example:
+; 01,My Car,01,03,15
+;
+; Remove the semi-colon from the above line to see how it works.
+; ... or add your own using that format
+;
+
+01,Phils Golf,01,03,15,17,19,46,56,
+05,tt,01,
