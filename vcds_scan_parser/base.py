@@ -1,3 +1,4 @@
+import logging
 from collections import OrderedDict
 try:
     import winreg
@@ -8,7 +9,9 @@ import os
 
 from .constants import *
 
-test_scan = '/Users/philippnagel/Desktop/Log-WVWBF03D668004117-321660km-199870mi.txt'
+logger = logging.getLogger(__name__)
+test_scan = r"C:\Users\Phil\git-repos\vcds-scan-profile-helper\test_data\Log-WVWBF03D668004117-321660km-199870mi.txt"
+
 
 
 def find_vcds_path():
@@ -41,29 +44,60 @@ def get_modules_from_file(txt):
 
 
 class MyAutoScan:
-    def __init__(self, txt_file=find_my_autoscan()):
+    def __init__(self, txt_file=None):
+        if not txt_file:
+            txt_file = os.path.join(find_vcds_path(), 'MyAutoScan.txt')
         self.txt = txt_file
-        parsed = self.parse_my_scan()
+        parsed = self.parse_my_scan(self.txt)
         self.comments = parsed[COMMENTS]
         self.cars = parsed[CARS]
+        self.default_txt_file = os.path.join(find_vcds_path(), 'AutoScan.txt')
+        self.default_cars = self.parse_my_scan(self.default_txt_file)[CARS]
 
 
-    def parse_my_scan(self):
-        with open(self.txt, 'r') as f:
+    def __verify_cars(self):
+        if len(self.cars) + len(self.default_cars) > 250:
+            raise ValueError('Too May Chassis Types')
+        for car in self.cars.values():
+            self.__verify_car(car, new=False)
+        return True
+
+
+    def __verify_car(self, car, new=True):
+        errors = []
+        if len(car[CAR]) > 3:
+            errors.append(
+                'Chassis Code "{}" Too Long, must be 3 characters or less!'.format(car[CAR]))
+        if len(car[DESCRIPTION]) > 15:
+            errors.append(
+                'Description "{}" Too Long, must be 15 characters or less!'.format(car[DESCRIPTION]))
+        if len(car[MODULES]) > 125:
+            errors.append('Too Many Module Addresses, must be less 125 or less!')
+        if new:
+            if car[CAR] in list(self.cars.keys()) + list(self.default_cars.keys()):
+                errors.append('Chassis Code "{}" already exists'.format(car[CAR]))
+        if errors:
+            raise ValueError('; '.join(errors))
+        return True
+
+
+    def parse_my_scan(self, file):
+        with open(file, 'r') as f:
             content = [l.strip() for l in f]
-        content_d = OrderedDict()
+        content_d = {}
         content_d[COMMENTS] = []
-        content_d[CARS] = {}
+        content_d[CARS] = OrderedDict()
         for line in content:
-            if line.startswith(';'):
-                content_d[COMMENTS].append(line)
-            else:
-                d = {}
-                items = line.split(',')
-                d[CAR] = items[0].strip()
-                d[DESCRIPTION] = items[1].strip()
-                d[MODULES] = [i.strip() for i in items[2:]]
-                content_d[CARS][d[CAR]] = d
+            if line.strip():
+                if line.startswith(';'):
+                    content_d[COMMENTS].append(line)
+                else:
+                    d = {}
+                    items = line.split(',')
+                    d[CAR] = items[0].strip()
+                    d[DESCRIPTION] = items[1].strip()
+                    d[MODULES] = [i.strip() for i in items[2:]]
+                    content_d[CARS][d[CAR]] = d
         return content_d
 
 
@@ -76,11 +110,22 @@ class MyAutoScan:
         d = {CAR: car,
              DESCRIPTION: description,
              MODULES: modules}
+        self.__verify_car(d)
         self.cars[CAR] = d
 
 
+    def delete_car(self, car):
+        if hasattr(car, CAR):
+            car = car[CAR]
+        try:
+            del self.cars[car]
+        except KeyError:
+            logger.warning('Could not delete chassis code "{}" because it was not found'.format(car))
+
+
     def update_file(self):
-        nl = '\r\n'
+        nl = '\n'
+        self.__verify_cars()
         with open(self.txt, 'w') as f:
             for comment in self.comments:
                 f.write('{}{}'.format(comment, nl))
