@@ -43,11 +43,16 @@ def get_modules_from_file(txt):
     return modules
 
 
+def get_scan_files():
+    scanpth = os.path.join(find_vcds_path(), 'Scans')
+    return [os.path.join(scanpth, file) for file in os.listdir(scanpth)
+        if file.endswith('.txt') and not file == 'ReadMe.txt']
+
+
 class MyAutoScan:
     def __init__(self, txt_file=None):
-        if not txt_file:
-            txt_file = os.path.join(find_vcds_path(), 'MyAutoScan.txt')
-        self.txt = txt_file
+        self.logfiles = get_scan_files()
+        self.txt = os.path.join(find_vcds_path(), 'MyAutoScan.txt')
         parsed = self.parse_my_scan(self.txt)
         self.comments = parsed[COMMENTS]
         self.cars = parsed[CARS]
